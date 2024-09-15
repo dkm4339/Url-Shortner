@@ -1,0 +1,232 @@
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #4e54c8, #8f94fb);
+    color: #fff;
+}
+
+/* Main Container Styles */
+.main {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Input Styles */
+.url-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="url"],
+input[type="text"],
+input[type="password"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    width: 80%; /* Adjust width as necessary */
+    font-size: 1rem;
+}
+
+/* Button Styles */
+#shortenBtn {
+    padding: 10px 20px;
+    background: #07ed67;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#shortenBtn:hover {
+    background: #ff5a4d;
+}
+
+#result {
+    margin-top: 30px;
+}
+
+#result p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Shortened URL Styles */
+#shortenedURL {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #61dafb;
+    color: #000;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#shortenedURL:hover {
+    background: #50b7d9;
+}
+
+/* Copy Button Styles */
+#result button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #3d28a7;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#result button:hover {
+    background: #218838;
+}
+
+/* QR Code Styles */
+.qr-code {
+    margin-top: 20px;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #333;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: linear-gradient(45deg, #222, #444);
+}
+
+.dark-mode .main {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Login Form Styles */
+.login-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 80%; /* Ensure both fields have the same width */
+    font-size: 1rem;
+}
+
+.login-container button {
+    padding: 10px 20px;
+    background: #07ed67;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-container button:hover {
+    background: #ff5a4d;
+}
+
+/* Signup Form Styles */
+.signup-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="password"] {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 80%; /* Ensure both fields have the same width */
+    font-size: 1rem;
+}
+
+.signup-container button {
+    padding: 10px 20px;
+    background: #07ed67;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.signup-container button:hover {
+    background: #ff5a4d;
+}
+
+.toggle-form {
+    color: #07ed67;
+    cursor: pointer;
+}
+
+/* Logo Styles */
+.login-logo {
+    display: block;
+    margin: 0 auto 20px;  /* Center the logo and add space below it */
+    width: 100px;         /* Adjust the width as needed */
+    height: auto;         /* Maintain aspect ratio */
+}
+
+/* Home Button Icon */
+.home-button {
+    position: fixed;
+    top: 70px; /* Positioned below the dark mode toggle */
+    right: 20px;
+    padding: 10px;
+    background: #333;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.home-button:hover {
+    background: #555;
+}
+

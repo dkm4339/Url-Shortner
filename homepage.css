@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    position: fixed;
+    top: auto;
+    right: auto;
+    padding: auto;
+    background: #333;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #4e54c8;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #4e54c8, #8f94fb);
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #f1c40f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #f39c12;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature-item {
+    background-color: #4e54c8;
+    color: rgba(234, 227, 227, 0.911);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background: #dddbe2;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial-item {
+    background-color: #2f10dc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-item h4 {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 30px;
+}
+
+.contact .cta-btn {
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    background-color: #4e54c8;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: #222;
+    color: #fff;
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+}
+
+.dark-mode .hero {
+    background: linear-gradient(45deg, #222, #555);
+}
+
+.dark-mode .features,
+.dark-mode .testimonials,
+.dark-mode .contact {
+    background: #333;
+    color: #fff;
+}
+
+.dark-mode .cta-btn {
+    background-color: #f39c12;
+}
+
+.dark-mode .dark-mode-toggle {
+    background: #fff;
+    color: #333;
+}
+
+/* Dark Mode for Footer */
+.dark-mode footer {
+    background-color: #333;
+}
+
+/* Transitions for smoother switching */
+.dark-mode-toggle, 
+.cta-btn,
+.nav-links a {
+    transition: all 0.3s ease;
+}

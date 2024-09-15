@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortify: Transform Long URLs into Short & Sweet Links</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</div>
+
+    <!-- Home Button Icon -->
+    <a href="homepage.html" class="home-button">🏠</a>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <img src="logo-removebg-preview.png" alt="Logo" class="login-logo">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Username" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginError" style="color: red; display: none;">Invalid username or password</p>
+        <p>Forgot your password? <span class="toggle-form" onclick="forgotPassword()">Reset it</span></p>
+        <p>Don't have an account? <span class="toggle-form" onclick="showSignupForm()">Sign up</span></p>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="signup-container" style="display: none;">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="text" id="signupUsername" placeholder="Username" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <button type="submit">Create Account</button>
+        </form>
+        <p id="signupError" style="color: red; display: none;">Username already exists</p>
+        <p>Already have an account? <span class="toggle-form" onclick="showLoginForm()">Login</span></p>
+    </div>
+
+    <!-- Main Content (Hidden Until Login) -->
+    <div class="main" style="display: none;">
+        <div id="container">
+            <h1>Shortify: URL Shortener</h1>
+            <p>Transform Long URLs into Short and generate a QR code instantly!</p>
+
+            <div class="url-input">
+                <input type="url" id="urlInput" placeholder="Enter URL" required>
+                <button onclick="shortenURL()" id="shortenBtn">Shorten</button>
+            </div>
+
+            <div id="result" style="display: none;">
+                <p>Shortened URL:</p>
+                <a href="" target="_blank" id="shortenedURL"></a>
+                <button onclick="copyToClipboard()">Copy</button>
+
+                <!-- QR Code Display -->
+                <div class="qr-code">
+                    <p>QR Code:</p>
+                    <img id="qrCodeImage" src="" alt="QR Code">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
